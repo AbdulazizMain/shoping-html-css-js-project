@@ -1,0 +1,319 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+body{
+    padding: 0;
+    margin: 0 auto;
+    background-color: snow;
+    font-family: sans-serif;
+}
+.contayner{
+    width: 95%;
+    margin: auto;
+}
+.nav{
+    width: 100%;
+    height: 95vh;
+    background-image: url(./product/home_ban.jpg);
+    background-size: cover;
+    background-blend-mode: color;
+    background-position: right bottom;
+    background-color: rgba(0, 0, 0, 0.103);
+}
+.display_nav_bar{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.76);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav_bar{
+    padding: 20px;
+}
+.nav_bar a{
+    padding-bottom: 5px;
+    text-align: center ;
+    color: rgb(62, 112, 185);
+    text-decoration: none;
+    font-weight: initial;
+}
+.nav_bar a:hover{
+    color: rgb(20, 93, 202);
+    border-bottom: rgb(20, 93, 202) solid 1px;
+    transition: 1s;
+}
+.nav_bar li{
+   display: inline;
+   font-weight: 500;
+   font-size: 14px;
+   padding: 10px;
+}
+.nav_logo{
+    width: 100px;
+    height: 50px;
+}
+.nav_logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.shoping a{
+    color: rgb(62, 112, 185);
+    font-size: 18px;
+    cursor: pointer;
+}
+.ban{
+    width: 40%;
+    color: rgb(17, 17, 17);
+    margin: 60px;
+    padding: 20px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.76);
+}
+.ban p{
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+.ban .bottom_button{
+    width: 40%;
+    margin: 0;
+    padding: 10px;
+}
+.ban .bottom_button a{
+    color: rgb(44, 44, 44);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    margin: auto;
+}
+.card{
+    margin: auto;
+    margin-top: 20px;
+    width: 350px;
+    max-height: 100%;
+    background-color: silver;
+    border-radius: 5px;
+    transition: 1s;
+}
+.product_img{
+    width: 90%;
+    height: 45%;
+    margin: auto;
+    padding: 10px;
+}
+.product_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.card_body{
+    margin: auto;
+    padding: 15px;
+}
+.button_div{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.card_body a{
+    text-decoration: none;
+    color: rgb(17, 14, 14);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top_button{
+    background-color: rgb(62, 112, 185);
+    padding: 15px;
+    width: 60%;
+    border-radius: 15px 0 0 15px;
+    transition: 0.5s;
+}
+.top_button_1{
+    background-color: rgb(62, 112, 185);
+    padding: 15px;
+    width: 40%;
+    border-radius: 0 15px 15px 0;
+    transition: 0.5s;
+}
+.top_button:hover{
+    background-color: rgb(97, 140, 233);
+}
+.top_button_1:hover{
+    background-color: rgb(97, 140, 233);
+}
+.card:hover{
+    background-color: rgb(173, 173, 173);
+    transition: 1s;
+    box-shadow: rgb(109, 109, 109) 0px 0px 50px;
+}
+.bottom_button{
+    background-color: rgb(97, 140, 233);
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.bottom_button:hover{
+    background-color: rgb(62, 112, 185);
+    transition: 0.3s;
+}
+.atag{
+    border-bottom: rgb(20, 93, 202) solid 1px;
+}
+.itag{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(230, 230, 230);
+    border-bottom: solid #fff 1px;
+}
+@media(max-width:1108px){
+    .card{
+        width: 45%;
+        /* height: 560px; */
+    }
+}
+@media(max-width:698px){
+    .card{
+        width: 90%;
+        height: 100%;
+    }
+}
+@media(max-width:300px){
+    .contayner{
+        display: none;
+    }
+}
+.select_con{
+    margin: auto;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(22, 22, 22, 0.972);
+    position: absolute;
+    top: 10px;
+    border-radius: 5px;
+    display: none;
+}
+.select_con .xznak{
+    background-color: #fff;
+    color: black;
+    padding: 5px 10px;
+    border:none;
+    border-radius: 10px; 
+    position: absolute;
+    right: 80px;
+    top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+.select{
+    width: 80%;
+    height: 450px;
+    background-color: rgb(22 22 22 / 58%);
+    border-radius: 5px;
+    margin: auto;
+    padding: 20px; 
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    margin: 80px auto;
+    border: 2px #fff solid;
+    overflow: scroll;
+}
+.nav_bar #close{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: sans-serif;
+    color: #fff;
+    margin: 20px;
+    padding: 5px 8px;
+    background-color: red;
+    display: none;
+} 
+.display_nav_bar #menu{
+    text-align: right;
+    padding: 20px;
+    cursor: pointer;
+    display: none;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0); 
+     
+}
+@media (max-width:766px){
+    .nav_bar{
+       position: fixed;
+       top: 0;
+       right:13px;
+       width: 50%;
+       background-color: rgba(105, 195, 246, 0.924); 
+       padding-top: 20px;
+       display: none;
+       height: 568px;  
+       z-index: 100;
+       transition: 1s;  
+    }
+    .nav_bar ul li{
+        display: block;
+        text-align: left;
+        padding: 10px;
+    }
+    .nav_bar li a{
+        color: black;
+        font-size: 15px;
+        font-weight: 800;
+    }
+    .nav_bar ul{
+        margin-top: 40px;
+        padding-top: 50px;
+        line-height: 20px;
+        width: 70%;
+    } 
+    .nav_bar #close{
+        display: block;
+    }
+    .display_nav_bar #menu{
+        display: block;
+    }
+    .ban{
+        width: 75%;
+        background-color: rgba(0, 0, 0, 0.411);
+        text-align: center;
+        margin: auto;
+       
+    }
+    .select{
+        width: 70%;
+    }
+    .select .card .product_img{
+        width: 90%;
+        height: 90%;
+    }
+}
+@media(max-width:1108px){
+    .card{
+        width: 45%;
+        /* height: 560px; */
+    }
+}
+@media(max-width:698px){
+    .card{
+        width: 90%;
+        height: 100%;
+    }
+}
+@media(max-width:300px){
+    .contayner{
+        display: none;
+    }
+}
+
+
